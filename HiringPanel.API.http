@@ -1,6 +1,0 @@
-@HiringPanel.API_HostAddress = http://localhost:5277
-
-GET {{HiringPanel.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
