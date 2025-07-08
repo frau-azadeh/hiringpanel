@@ -1,0 +1,27 @@
+@page
+@model HiringPanel.Razor.Pages.Applicants.CreateModel
+
+<h2>Create Applicant</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="Applicant.Name">Name:</label>
+        <input asp-for="Applicant.Name" />
+        <span asp-validation-for="Applicant.Name"></span>
+    </div>
+    <div>
+        <label asp-for="Applicant.Email">Email:</label>
+        <input asp-for="Applicant.Email" />
+        <span asp-validation-for="Applicant.Email"></span>
+    </div>
+    <div>
+        <label asp-for="Applicant.ResumeUrl">Resume URL:</label>
+        <input asp-for="Applicant.ResumeUrl" />
+        <span asp-validation-for="Applicant.ResumeUrl"></span>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

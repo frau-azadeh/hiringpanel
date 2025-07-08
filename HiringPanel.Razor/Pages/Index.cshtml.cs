@@ -1,19 +1,26 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using HiringPanel.Razor.Data;
+using HiringPanel.Razor.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace HiringPanel.Razor.Pages;
-
-public class IndexModel : PageModel
+namespace HiringPanel.Razor.Pages.Applicants
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
+    public class IndexModel : PageModel
     {
-        _logger = logger;
-    }
+        private readonly HiringPanelDbContext _db;
 
-    public void OnGet()
-    {
+        public IndexModel(HiringPanelDbContext db)
+        {
+            _db = db;
+        }
 
+        public List<Applicant> Applicants { get; set; }
+
+        public async Task OnGetAsync()
+        {
+            Applicants = await _db.Applicants.ToListAsync();
+        }
     }
 }
