@@ -1,0 +1,36 @@
+@page "{id:int}"
+@model HiringPanel.Razor.Pages.Applicants.EditModel
+@{
+    ViewData["Title"] = "Edit Applicant";
+}
+
+<h1>Edit Applicant</h1>
+
+<form method="post" class="max-w-md mx-auto p-4 border rounded">
+    <input type="hidden" asp-for="Applicant.Id" />
+
+    <div class="mb-4">
+        <label asp-for="Applicant.Name" class="block font-medium mb-1"></label>
+        <input asp-for="Applicant.Name" class="border rounded w-full px-2 py-1" />
+        <span asp-validation-for="Applicant.Name" class="text-red-600"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="Applicant.Email" class="block font-medium mb-1"></label>
+        <input asp-for="Applicant.Email" class="border rounded w-full px-2 py-1" />
+        <span asp-validation-for="Applicant.Email" class="text-red-600"></span>
+    </div>
+
+
+    <div class="mb-4">
+        <label asp-for="Applicant.ResumeUrl" class="block font-medium mb-1"></label>
+        <input asp-for="Applicant.ResumeUrl" class="border rounded w-full px-2 py-1" />
+        <span asp-validation-for="Applicant.ResumeUrl" class="text-red-600"></span>
+    </div>
+
+    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Save Changes</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

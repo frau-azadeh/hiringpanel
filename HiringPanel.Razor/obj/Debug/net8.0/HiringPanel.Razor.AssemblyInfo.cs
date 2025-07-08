@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HiringPanel.Razor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9e24b50d0f76de0bdf91a0c17e9a14b8b1a8cab")]
 [assembly: System.Reflection.AssemblyProductAttribute("HiringPanel.Razor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HiringPanel.Razor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
