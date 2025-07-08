@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HiringPanel.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7c6dbe42b7f2fee2789ee5fc2bb81ae979c0572")]
 [assembly: System.Reflection.AssemblyProductAttribute("HiringPanel.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HiringPanel.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
